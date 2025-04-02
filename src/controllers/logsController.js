@@ -1,7 +1,7 @@
 // Importar Firestore desde Firebase
 const { admin } = require('../config/firebase'); // Asegúrate de tener configurada la conexión a Firebase
 const db = admin.firestore();
-const logsCollection = db.collection('logs');
+const logsCollection = db.collection('logs2');
 
 
 // 🔹 Obtener logs
