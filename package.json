@@ -1,5 +1,5 @@
 {
-  "name": "server1-rate-limit",
+  "name": "server2-no-rate-limit",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
