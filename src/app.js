@@ -57,13 +57,14 @@ app.use((req, res, next) => {
     // Registrar logs usando Winston
     logger.log({ level: logData.logLevel, message: "Request completed", ...logData });
     try {
-      await db.collection("logs").add(logData); // Guarda el log en Firestore
+      await db.collection("logs2").add(logData); // Guarda el log en Firestore
     } catch (error) {
       logger.error("Error al guardar log en Firestore:", error);
     }
   });
   next();
 });
+
 
 // Middlewares
 app.use(express.json());
